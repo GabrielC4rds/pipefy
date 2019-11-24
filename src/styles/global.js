@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
+
 export default createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap'); 
     *{
@@ -15,8 +16,8 @@ export default createGlobalStyle`
 
     body{
         font: 14px 'Roboto', sans-serif;
-        background: #ecf1f8;
-        color: #333;
+        background: ${({ theme }) => theme.body};
+        color: ${({ theme }) => theme.text};
         -webkit-font-smooting: antialised !important;
     }
 
